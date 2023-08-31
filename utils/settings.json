@@ -1,0 +1,24 @@
+{
+  "name": "Bridger Tower",
+  "site": "http://bridgertower.com",
+  "description": "Bridger Tower is a 12-story, 99-unit luxury apartment building located in the heart of downtown Bozeman, Montana.",
+  "bg_color": "#eee",
+  "socials": [
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/bridgertower/"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/brdgr/"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/bridgertower"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/"
+    }
+  ]
+}

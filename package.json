@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "link:babel/preset-env@babel/preset-react@commitlint/cli@commitlint/config-conventionalbabel-eslintbabel-jestcz-conventional-changelogenzymeenzyme-adapter-react-16eslinteslint-config-prettiereslint-plugin-jesteslint-plugin-prettiereslint-plugin-reactgh-pageshtml-loaderhuskyjestjest-css-modulesjsdomlint-stagedmarkdown-loadernwbprettierprop-typesreactreact-demo-pagereact-domreact-test-renderer",
     "@types/node": "20.5.7",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "@types/webpack": "^5.28.2",
     "autoprefixer": "10.4.15",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
