@@ -17,6 +17,7 @@ const ImageGrid = () => {
           alt={`${index} by bridger tower`}
           width={500}
           height={500}
+          placeholder="blur"
         />
       ))}
     </Masonry>
