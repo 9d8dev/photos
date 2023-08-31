@@ -3,9 +3,10 @@ import data from "@/utils/settings.json";
 
 const Header = () => {
   return (
-    <section className="max-w-screen-md px-4 flex flex-col gap-4 lg:gap-12 lg:py-12">
-      <h1 className="text-3xl lg:text-4xl font-light flex gap-2">
-        <span className="block -mt-px ml-1">📷</span> Photography by{" "}
+    <section className="max-w-screen-md px-6 md:px-4 flex flex-col gap-4 lg:gap-12 lg:py-12 py-8">
+      <h1 className="text-3xl lg:text-4xl font-light md:flex gap-2">
+        <span className="block mb-2 md:mb-0 -mt-px ml-1">📷</span> Photography
+        by{" "}
         <a
           className="hover:underline underline-offset-4 transition-all"
           href={data.site}
