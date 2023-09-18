@@ -18,7 +18,7 @@ const Header = () => {
       <div className="flex gap-4">
         {data.socials.map((social, index) => (
           <a
-            className="border-b-2 hover:mb-1 hover:-mt-1 transition-all flex"
+            className="border-b-2 border-b-neutral-300 hover:mb-1 hover:-mt-1 transition-all flex gap-2"
             key={index}
             href={social.url}
           >
