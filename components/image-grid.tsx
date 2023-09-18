@@ -41,7 +41,7 @@ const ImageGrid = () => {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-10"
           onClick={() => setIsOpen(false)}>
           <Image
-            {/* @ts-ignore */}
+            // @ts-ignore
             src={activeImage}
             alt={`Image by ${settings.name}`}
             width={1080}
