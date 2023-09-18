@@ -1,32 +1,56 @@
-import React from "react";
+'use client';
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Masonry from "./masonry";
-import setiings from "@/utils/settings.json"
+import settings from "@/utils/settings.json";
 
 const ImageGrid = () => {
   // @ts-ignore
   const imageContext: RequireContext = require.context("@/public/images", true);
   const imageFileNames: string[] = imageContext.keys();
-  console.log(imageFileNames);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeImage, setActiveImage] = useState(null);
 
   return (
-    <Masonry>
-      {imageFileNames.map((fileName, index) => {
-        const imageSrc = imageContext(fileName).default;
-        const altText = `Image ${index} by ${setiings.name}`;
+    <div>
+      <Masonry>
+        {imageFileNames.map((fileName, index) => {
+          const imageSrc = imageContext(fileName).default;
+          const altText = `Image ${index} by ${settings.name}`;
+          return (
+            <div key={fileName} onClick={() => {
+              setIsOpen(true);
+              setActiveImage(imageSrc);
+            }}>
+              <Image
+                className="hover:cursor-pointer hover:opacity-90"
+                src={imageSrc}
+                alt={altText}
+                width={1080}
+                height={500}
+                placeholder="blur"
+              />
+            </div>
+          );
+        })}
+      </Masonry>
 
-        return (
+      {isOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-10"
+          onClick={() => setIsOpen(false)}>
           <Image
-            key={fileName}
-            src={imageSrc}
-            alt={altText}
-            width={500}
+            src={activeImage}
+            alt={`Image by ${settings.name}`}
+            width={1080}
             height={500}
-            placeholder="blur"
+            className="max-h-screen w-auto md:p-24 p-6"
           />
-        );
-      })}
-    </Masonry>
+        </div>
+      )
+      }
+    </div >
   );
 };
 
