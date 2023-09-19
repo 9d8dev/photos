@@ -1,8 +1,8 @@
-# Project Name
+# Photography Portfolio NextJS and Tailwind Template
 
 ![CleanShot 2023-09-18 at 21 37 00@2x](https://github.com/9d8dev/photos/assets/57158102/74762c0a-41ec-4b76-a1b9-d6aa83b1cbc4)
 
-![Deploy with Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F9d8dev%2Fphotos&project-name=photos&repository-name=photos)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F9d8dev%2Fphotos&project-name=photos&repository-name=photos)
 
 ## Introduction
 
