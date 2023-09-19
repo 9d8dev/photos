@@ -38,7 +38,7 @@ const ImageGrid = () => {
       </Masonry>
 
       {isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-10"
+        <div className="fixed inset-0 flex items-center cursor-zoom-out justify-center bg-white bg-opacity-75 backdrop-blur-md z-10"
           onClick={() => setIsOpen(false)}>
           <Image
             // @ts-ignore
