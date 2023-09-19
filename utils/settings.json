@@ -5,8 +5,12 @@
   "bg_color": "#eee",
   "socials": [
     {
-      "name": "Instagram",
-      "url": "https://www.instagram.com/bridgertower/"
+      "name": "Source Code",
+      "url": "https://github.com/9d8dev/photos"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://www.github.com/brijr"
     },
     {
       "name": "X",
@@ -15,6 +19,6 @@
     {
       "name": "Website",
       "url": "https://bridger.to"
-    }
+    },
   ]
 }
