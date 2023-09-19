@@ -12,6 +12,7 @@ const ImageGrid = () => {
 
   useEffect(() => {
     const loadImages = async () => {
+      // @ts-ignore : webpack magic
       const context = require.context("@/public/images", true);
       setImageFileNames(context.keys());
     };
