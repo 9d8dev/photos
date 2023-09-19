@@ -11,7 +11,7 @@ This project represents a photography website designed to showcase a vast array 
 For installing the project dependencies, execute the command below:
 
 ```
-install
+pnpm install
 ```
 
 The `package-lock.json` file guarantees the installation of the correct versions of dependencies.
@@ -21,7 +21,7 @@ The `package-lock.json` file guarantees the installation of the correct versions
 Execute the following command to run the project in a local environment:
 
 ```
-dev
+pnpm dev
 ```
 
 Activating this command will start the development server and enable you to view the website at http://localhost:3000.
