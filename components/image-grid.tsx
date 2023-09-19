@@ -25,7 +25,7 @@ const ImageGrid = () => {
               setActiveImage(imageSrc);
             }}>
               <Image
-                className="hover:cursor-pointer hover:opacity-90"
+                className="hover:cursor-zoom-in hover:opacity-90"
                 src={imageSrc}
                 alt={altText}
                 width={1080}
