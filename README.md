@@ -7,9 +7,13 @@
 ## TLDR
 
 Step 1: Click Deploy with Vercel above
+
 Step 2: Git clone to your local env
+
 Step 3: Edit `utils/settings.json` with your name and links, etc. 
+
 Step 4: Add in your photos to the `public/images` directory 
+
 Step 5: Link your new Photography Portfolio everywhere! 
 
 ## Introduction
