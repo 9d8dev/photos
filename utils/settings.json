@@ -1,6 +1,6 @@
 {
   "name": "Bridger Tower",
-  "site": "http://bridger.cc",
+  "site": "http://bridger.to",
   "description": "Hey! My name is Bridger Tower and I'm from Salt Lake City, Utah. I'm a designer and developer and sometimes photographer. Photos taken on a Minolta Maxxum 7000 or a Fuji Film XT-3.",
   "bg_color": "#eee",
   "socials": [
@@ -11,6 +11,10 @@
     {
       "name": "X",
       "url": "https://twitter.com/bridgertower"
+    },
+    {
+      "name": "Website",
+      "url": "https:/bridger.to"
     }
   ]
 }
