@@ -4,6 +4,14 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F9d8dev%2Fphotos&project-name=photos&repository-name=photos)
 
+## TLDR
+
+Step 1: Click Deploy with Vercel above
+Step 2: Git clone to your local env
+Step 3: Edit `utils/settings.json` with your name and links, etc. 
+Step 4: Add in your photos to the `public/images` directory 
+Step 5: Link your new Photography Portfolio everywhere! 
+
 ## Introduction
 
 This project represents a photography website designed to showcase a vast array of images. It offers users an engaging platform for interacting with the images.
