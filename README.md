@@ -1,6 +1,6 @@
 # Project Name
 
-Deploy this project with Vercel by clicking ![here](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F9d8dev%2Fphotos&project-name=photos&repository-name=photos).
+![Deploy with Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F9d8dev%2Fphotos&project-name=photos&repository-name=photos)
 
 ## Introduction
 
