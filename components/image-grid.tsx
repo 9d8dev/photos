@@ -8,13 +8,16 @@ import settings from "@/utils/settings.json";
 const ImageGrid = () => {
   // @ts-ignore
   const imageContext: RequireContext = require.context("@/public/images", true);
-  const imageFileNames: string[] = imageContext.keys();
+  let imageFileNames: string[] = imageContext.keys();
+
+  // Randomize the order of images
+  imageFileNames = imageFileNames.sort(() => Math.random() - 0.5);
 
   const [isOpen, setIsOpen] = useState(false);
   const [activeImage, setActiveImage] = useState(null);
 
   return (
-    <div>
+    <>
       <Masonry>
         {imageFileNames.map((fileName, index) => {
           const imageSrc = imageContext(fileName).default;
@@ -37,21 +40,22 @@ const ImageGrid = () => {
         })}
       </Masonry>
 
-      {isOpen && (
-        <div className="fixed inset-0 flex items-center cursor-zoom-out justify-center bg-white bg-opacity-75 backdrop-blur-md z-10"
-          onClick={() => setIsOpen(false)}>
-          <Image
-            // @ts-ignore
-            src={activeImage}
-            alt={`Image by ${settings.name}`}
-            width={1080}
-            height={500}
-            className="max-h-screen w-auto md:p-24 p-6"
-          />
-        </div>
-      )
+      {
+        isOpen && (
+          <div className="fixed inset-0 flex items-center cursor-zoom-out justify-center bg-white bg-opacity-75 backdrop-blur-md z-10"
+            onClick={() => setIsOpen(false)}>
+            <Image
+              // @ts-ignore
+              src={activeImage}
+              alt={`Image by ${settings.name}`}
+              width={1080}
+              height={500}
+              className="max-h-screen w-auto md:p-24 p-6"
+            />
+          </div>
+        )
       }
-    </div >
+    </>
   );
 };
 
